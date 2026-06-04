@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-pwd
+cp $HOME/userver/src/nginx-httpd
