@@ -1,16 +1,9 @@
 server {
     listen 80;
     listen [::]:80;
-
-    # Arahkan root ke folder yang baru kita buat
     root /var/www/nginx-httpd;
-    
-    # File utama yang akan dicari pertama kali
     index index.html;
-
-    # Nama domain atau IP (Gunakan IP VM kamu jika belum ada domain)
     server_name _; 
-
     location / {
         try_files $uri $uri/ =404;
     }
